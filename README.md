@@ -1,7 +1,7 @@
 # VALA_Library
-Coding Test for VALA
+## Coding Test for VALA by Elizabeth Crockford-Härkönen
 
-Exercise 4: Library
+### Exercise 4: Library
 
 ## How to run this program
 
