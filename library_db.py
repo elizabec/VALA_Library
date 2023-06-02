@@ -2,18 +2,16 @@ import sys
 
 def menu_select(menu):
     while menu:
-        select = input("Please select from the following:\n1. Add a Book\n2. Show existing database\nQ. Exit\n")
+        select = input("\nPlease select one of the following:\n1. Add a Book\n2. Show existing database\nQ. Exit\nPress enter to confirm\n")
         if select == "1":
             add_book()
         elif select == "2":
             show_database()
-        elif select == "3":
-            sort_database(sys.argv[1])
         elif select == "Q" or select == "q":
             print("Exiting...")
             exit()
         else:
-            print("Please choose a valid option")
+            print("Please choose a valid option\n")
 
 def add_book():
     title = input("Please enter the book title: ")
@@ -41,6 +39,7 @@ def show_database():
         if not empty_check:
             print("There is nothing in the database!\n")
     with open(sys.argv[1], "r") as lib:
+        print("\nThe following books are currently in the database:")
         for line in lib:
             strip_lines=line.strip()
             lib_line = strip_lines.split("/")

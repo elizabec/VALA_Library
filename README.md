@@ -14,4 +14,4 @@
     python library_db.py library.txt
     ```
 
-4. The program menu will appear in the terminal window.
+4. The program menu will appear in the terminal window. Menu selection is through keyboard input.
